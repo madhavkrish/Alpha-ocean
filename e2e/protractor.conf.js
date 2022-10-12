@@ -18,7 +18,12 @@ exports.config = {
     showColors: true,
     defaultTimeoutInterval: 30000,
     print: function() {},
-  },
+  },exports.config = {
+  allScriptsTimeout: 11000,
+  specs: ['./src/**/*.e2e-spec.ts'],
+  capabilities: {
+    browserName: 'chrome',
+      },
   },
   directConnect: true,
   baseUrl: 'http://localhost:4200/',
